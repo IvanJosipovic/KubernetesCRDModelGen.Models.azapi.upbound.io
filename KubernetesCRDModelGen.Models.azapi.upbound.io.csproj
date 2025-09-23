@@ -2,5 +2,6 @@
   <PropertyGroup>
     <PackageId>KubernetesCRDModelGen.Models.azapi.upbound.io</PackageId>
     <RepositoryUrl>https://github.com/IvanJosipovic/KubernetesCRDModelGen.Models.azapi.upbound.io</RepositoryUrl>
+    <Description>C# models for Kubernetes CRDs in group azapi.upbound.io</Description>
   </PropertyGroup>
 </Project>
