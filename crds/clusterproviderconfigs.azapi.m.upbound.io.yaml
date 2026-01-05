@@ -3,18 +3,18 @@ kind: CustomResourceDefinition
 metadata:
   annotations:
     controller-gen.kubebuilder.io/version: v0.19.0
-  name: providerconfigs.azapi.upbound.io
+  name: clusterproviderconfigs.azapi.m.upbound.io
 spec:
-  group: azapi.upbound.io
+  group: azapi.m.upbound.io
   names:
     categories:
     - crossplane
     - provider
     - azapi
-    kind: ProviderConfig
-    listKind: ProviderConfigList
-    plural: providerconfigs
-    singular: providerconfig
+    kind: ClusterProviderConfig
+    listKind: ClusterProviderConfigList
+    plural: clusterproviderconfigs
+    singular: clusterproviderconfig
   scope: Cluster
   versions:
   - additionalPrinterColumns:
@@ -28,7 +28,7 @@ spec:
     name: v1beta1
     schema:
       openAPIV3Schema:
-        description: A ProviderConfig configures a AzAPI provider.
+        description: A ClusterProviderConfig configures an AzAPI provider.
         properties:
           apiVersion:
             description: |-
