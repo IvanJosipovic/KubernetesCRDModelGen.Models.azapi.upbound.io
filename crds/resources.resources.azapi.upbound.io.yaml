@@ -7,11 +7,11 @@ metadata:
 spec:
   group: resources.azapi.upbound.io
   names:
+    kind: Resource
     categories:
     - crossplane
     - managed
     - azapi
-    kind: Resource
     listKind: ResourceList
     plural: resources
     singular: resource
