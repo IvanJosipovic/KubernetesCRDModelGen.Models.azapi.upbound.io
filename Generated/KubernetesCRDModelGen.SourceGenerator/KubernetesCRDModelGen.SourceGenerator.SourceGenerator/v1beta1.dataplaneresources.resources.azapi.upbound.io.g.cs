@@ -193,12 +193,9 @@ public partial class V1beta1DataPlaneResourceSpecForProvider
     [JsonPropertyName("retry")]
     public V1beta1DataPlaneResourceSpecForProviderRetry? Retry { get; set; }
 
-    /// <summary>
-    /// A JSON-encoded string that contains the request body.
-    /// A JSON-encoded string that contains the write-only properties of the request body. This will be merge-patched to the body to construct the actual request body.
-    /// </summary>
+    /// <summary>A dynamic attribute that contains the write-only properties of the request body. This will be merge-patched to the body to construct the actual request body.</summary>
     [JsonPropertyName("sensitiveBody")]
-    public string? SensitiveBody { get; set; }
+    public JsonNode? SensitiveBody { get; set; }
 
     /// <summary>A map where the key is the path to the property in `sensitive_body` and the value is the version of the property. The key is a string in the format of `path.to.property[index].subproperty`, where `index` is the index of the item in an array. When the version is changed, the property will be included in the request body, otherwise it will be omitted from the request body.</summary>
     [JsonPropertyName("sensitiveBodyVersion")]
@@ -360,6 +357,14 @@ public partial class V1beta1DataPlaneResourceSpecInitProvider
     /// <summary>(Attributes) The retry object supports the following attributes: (see below for nested schema)</summary>
     [JsonPropertyName("retry")]
     public V1beta1DataPlaneResourceSpecInitProviderRetry? Retry { get; set; }
+
+    /// <summary>A dynamic attribute that contains the write-only properties of the request body. This will be merge-patched to the body to construct the actual request body.</summary>
+    [JsonPropertyName("sensitiveBody")]
+    public JsonNode? SensitiveBody { get; set; }
+
+    /// <summary>A map where the key is the path to the property in `sensitive_body` and the value is the version of the property. The key is a string in the format of `path.to.property[index].subproperty`, where `index` is the index of the item in an array. When the version is changed, the property will be included in the request body, otherwise it will be omitted from the request body.</summary>
+    [JsonPropertyName("sensitiveBodyVersion")]
+    public IDictionary<string, string>? SensitiveBodyVersion { get; set; }
 
     /// <summary>It is in a format like &lt;resource-type&gt;@&lt;api-version&gt;. &lt;api-version&gt; is version of the API used to manage this azure data plane resource.</summary>
     [JsonPropertyName("type")]
