@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.resources.azapi.upbound.io;
-/// <summary>DataPlaneResource is the Schema for the DataPlaneResources API. Manages a Azure data plane resource</summary>
+/// <summary>
+/// DataPlaneResource is the Schema for the DataPlaneResources API. Manages a Azure data plane resource
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.1.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.1.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1DataPlaneResourceList : IKubernetesObject<V1ListMeta>, IItems<V1beta1DataPlaneResource>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1DataPlaneResourceList : IKubernetesObject<V1ListMeta
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataPlaneResourceSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.1.0.")]
 public enum V1beta1DataPlaneResourceSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -58,6 +63,7 @@ public enum V1beta1DataPlaneResourceSpecDeletionPolicyEnum
 /// <summary>(Attributes) The retry object supports the following attributes: (see below for nested schema)</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.1.0.")]
 public partial class V1beta1DataPlaneResourceSpecForProviderRetry
 {
     /// <summary>
@@ -98,6 +104,7 @@ public partial class V1beta1DataPlaneResourceSpecForProviderRetry
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.1.0.")]
 public partial class V1beta1DataPlaneResourceSpecForProvider
 {
     /// <summary>A JSON object that contains the request body used to create and update data plane resource.</summary>
@@ -226,6 +233,7 @@ public partial class V1beta1DataPlaneResourceSpecForProvider
 /// <summary>(Attributes) The retry object supports the following attributes: (see below for nested schema)</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.1.0.")]
 public partial class V1beta1DataPlaneResourceSpecInitProviderRetry
 {
     /// <summary>
@@ -278,6 +286,7 @@ public partial class V1beta1DataPlaneResourceSpecInitProviderRetry
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.1.0.")]
 public partial class V1beta1DataPlaneResourceSpecInitProvider
 {
     /// <summary>A JSON object that contains the request body used to create and update data plane resource.</summary>
@@ -391,6 +400,7 @@ public partial class V1beta1DataPlaneResourceSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataPlaneResourceSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.1.0.")]
 public enum V1beta1DataPlaneResourceSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -415,6 +425,7 @@ public enum V1beta1DataPlaneResourceSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataPlaneResourceSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.1.0.")]
 public enum V1beta1DataPlaneResourceSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -431,6 +442,7 @@ public enum V1beta1DataPlaneResourceSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1DataPlaneResourceSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.1.0.")]
 public enum V1beta1DataPlaneResourceSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -442,6 +454,7 @@ public enum V1beta1DataPlaneResourceSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.1.0.")]
 public partial class V1beta1DataPlaneResourceSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -470,6 +483,7 @@ public partial class V1beta1DataPlaneResourceSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.1.0.")]
 public partial class V1beta1DataPlaneResourceSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -489,6 +503,7 @@ public partial class V1beta1DataPlaneResourceSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.1.0.")]
 public partial class V1beta1DataPlaneResourceSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -503,6 +518,7 @@ public partial class V1beta1DataPlaneResourceSpecWriteConnectionSecretToRef
 /// <summary>DataPlaneResourceSpec defines the desired state of DataPlaneResource</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.1.0.")]
 public partial class V1beta1DataPlaneResourceSpec
 {
     /// <summary>
@@ -571,6 +587,7 @@ public partial class V1beta1DataPlaneResourceSpec
 /// <summary>(Attributes) The retry object supports the following attributes: (see below for nested schema)</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.1.0.")]
 public partial class V1beta1DataPlaneResourceStatusAtProviderRetry
 {
     /// <summary>
@@ -611,6 +628,7 @@ public partial class V1beta1DataPlaneResourceStatusAtProviderRetry
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.1.0.")]
 public partial class V1beta1DataPlaneResourceStatusAtProvider
 {
     /// <summary>A JSON object that contains the request body used to create and update data plane resource.</summary>
@@ -732,6 +750,7 @@ public partial class V1beta1DataPlaneResourceStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.1.0.")]
 public partial class V1beta1DataPlaneResourceStatusConditions
 {
     /// <summary>
@@ -775,6 +794,7 @@ public partial class V1beta1DataPlaneResourceStatusConditions
 /// <summary>DataPlaneResourceStatus defines the observed state of DataPlaneResource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.1.0.")]
 public partial class V1beta1DataPlaneResourceStatus
 {
     [JsonPropertyName("atProvider")]
@@ -793,9 +813,13 @@ public partial class V1beta1DataPlaneResourceStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>DataPlaneResource is the Schema for the DataPlaneResources API. Manages a Azure data plane resource</summary>
+/// <summary>
+/// DataPlaneResource is the Schema for the DataPlaneResources API. Manages a Azure data plane resource
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.1.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.1.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1DataPlaneResource : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1DataPlaneResourceSpec>, IStatus<V1beta1DataPlaneResourceStatus?>
 {

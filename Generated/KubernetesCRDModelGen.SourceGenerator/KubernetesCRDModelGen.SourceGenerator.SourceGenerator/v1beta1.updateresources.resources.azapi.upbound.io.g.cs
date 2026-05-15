@@ -9,9 +9,13 @@ using System.Text.Json.Nodes;
 using System.Text.Json.Serialization;
 
 namespace KubernetesCRDModelGen.Models.resources.azapi.upbound.io;
-/// <summary>UpdateResource is the Schema for the UpdateResources API. Manages a subset of an existing azure resource&apos;s properties</summary>
+/// <summary>
+/// UpdateResource is the Schema for the UpdateResources API. Manages a subset of an existing azure resource&apos;s properties
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.1.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.1.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1UpdateResourceList : IKubernetesObject<V1ListMeta>, IItems<V1beta1UpdateResource>
 {
@@ -47,6 +51,7 @@ public partial class V1beta1UpdateResourceList : IKubernetesObject<V1ListMeta>, 
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UpdateResourceSpecDeletionPolicyEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.1.0.")]
 public enum V1beta1UpdateResourceSpecDeletionPolicyEnum
 {
     [EnumMember(Value = "Orphan"), JsonStringEnumMemberName("Orphan")]
@@ -58,6 +63,7 @@ public enum V1beta1UpdateResourceSpecDeletionPolicyEnum
 /// <summary>(Attributes) The retry object supports the following attributes: (see below for nested schema)</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.1.0.")]
 public partial class V1beta1UpdateResourceSpecForProviderRetry
 {
     /// <summary>
@@ -98,6 +104,7 @@ public partial class V1beta1UpdateResourceSpecForProviderRetry
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.1.0.")]
 public partial class V1beta1UpdateResourceSpecForProvider
 {
     /// <summary>A JSON object that contains the request body used to add on an existing azure resource.</summary>
@@ -201,6 +208,7 @@ public partial class V1beta1UpdateResourceSpecForProvider
 /// <summary>(Attributes) The retry object supports the following attributes: (see below for nested schema)</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.1.0.")]
 public partial class V1beta1UpdateResourceSpecInitProviderRetry
 {
     /// <summary>
@@ -253,6 +261,7 @@ public partial class V1beta1UpdateResourceSpecInitProviderRetry
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.1.0.")]
 public partial class V1beta1UpdateResourceSpecInitProvider
 {
     /// <summary>A JSON object that contains the request body used to add on an existing azure resource.</summary>
@@ -359,6 +368,7 @@ public partial class V1beta1UpdateResourceSpecInitProvider
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UpdateResourceSpecManagementPoliciesEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.1.0.")]
 public enum V1beta1UpdateResourceSpecManagementPoliciesEnum
 {
     [EnumMember(Value = "Observe"), JsonStringEnumMemberName("Observe")]
@@ -383,6 +393,7 @@ public enum V1beta1UpdateResourceSpecManagementPoliciesEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UpdateResourceSpecProviderConfigRefPolicyResolutionEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.1.0.")]
 public enum V1beta1UpdateResourceSpecProviderConfigRefPolicyResolutionEnum
 {
     [EnumMember(Value = "Required"), JsonStringEnumMemberName("Required")]
@@ -399,6 +410,7 @@ public enum V1beta1UpdateResourceSpecProviderConfigRefPolicyResolutionEnum
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [JsonConverter(typeof(JsonStringEnumConverter<V1beta1UpdateResourceSpecProviderConfigRefPolicyResolveEnum>))]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.1.0.")]
 public enum V1beta1UpdateResourceSpecProviderConfigRefPolicyResolveEnum
 {
     [EnumMember(Value = "Always"), JsonStringEnumMemberName("Always")]
@@ -410,6 +422,7 @@ public enum V1beta1UpdateResourceSpecProviderConfigRefPolicyResolveEnum
 /// <summary>Policies for referencing.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.1.0.")]
 public partial class V1beta1UpdateResourceSpecProviderConfigRefPolicy
 {
     /// <summary>
@@ -438,6 +451,7 @@ public partial class V1beta1UpdateResourceSpecProviderConfigRefPolicy
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.1.0.")]
 public partial class V1beta1UpdateResourceSpecProviderConfigRef
 {
     /// <summary>Name of the referenced object.</summary>
@@ -457,6 +471,7 @@ public partial class V1beta1UpdateResourceSpecProviderConfigRef
 /// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.1.0.")]
 public partial class V1beta1UpdateResourceSpecWriteConnectionSecretToRef
 {
     /// <summary>Name of the secret.</summary>
@@ -471,6 +486,7 @@ public partial class V1beta1UpdateResourceSpecWriteConnectionSecretToRef
 /// <summary>UpdateResourceSpec defines the desired state of UpdateResource</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.1.0.")]
 public partial class V1beta1UpdateResourceSpec
 {
     /// <summary>
@@ -539,6 +555,7 @@ public partial class V1beta1UpdateResourceSpec
 /// <summary>(Attributes) The retry object supports the following attributes: (see below for nested schema)</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.1.0.")]
 public partial class V1beta1UpdateResourceStatusAtProviderRetry
 {
     /// <summary>
@@ -579,6 +596,7 @@ public partial class V1beta1UpdateResourceStatusAtProviderRetry
 
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.1.0.")]
 public partial class V1beta1UpdateResourceStatusAtProvider
 {
     /// <summary>A JSON object that contains the request body used to add on an existing azure resource.</summary>
@@ -690,6 +708,7 @@ public partial class V1beta1UpdateResourceStatusAtProvider
 /// <summary>A Condition that may apply to a resource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.1.0.")]
 public partial class V1beta1UpdateResourceStatusConditions
 {
     /// <summary>
@@ -733,6 +752,7 @@ public partial class V1beta1UpdateResourceStatusConditions
 /// <summary>UpdateResourceStatus defines the observed state of UpdateResource.</summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.1.0.")]
 public partial class V1beta1UpdateResourceStatus
 {
     [JsonPropertyName("atProvider")]
@@ -751,9 +771,13 @@ public partial class V1beta1UpdateResourceStatus
     public long? ObservedGeneration { get; set; }
 }
 
-/// <summary>UpdateResource is the Schema for the UpdateResources API. Manages a subset of an existing azure resource&apos;s properties</summary>
+/// <summary>
+/// UpdateResource is the Schema for the UpdateResources API. Manages a subset of an existing azure resource&apos;s properties
+/// Deprecated: This API version (v1beta1) has been deprecated in release v2.1.0.
+/// </summary>
 [global::System.CodeDom.Compiler.GeneratedCode("KubernetesCRDModelGen", "1.6.0+0fbafdb9fc339df17b265ba23ecc4a7be2359877")]
 [global::System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage]
+[global::System.Obsolete("This API version is deprecated. Deprecated since v2.1.0.")]
 [KubernetesEntity(Group = KubeGroup, Kind = KubeKind, ApiVersion = KubeApiVersion, PluralName = KubePluralName)]
 public partial class V1beta1UpdateResource : IKubernetesObject<V1ObjectMeta>, ISpec<V1beta1UpdateResourceSpec>, IStatus<V1beta1UpdateResourceStatus?>
 {
